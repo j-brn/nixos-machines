@@ -15,5 +15,7 @@
     };
   };
 
+  hardware.enableRedistributableFirmware = true;
+
   system.stateVersion = "23.05";
 }

@@ -39,6 +39,11 @@ in
           "accel_profile" = "flat";
           "pointer_accel" = "0";
         };
+
+        "type:touchpad" = {
+          dwt = "enabled";
+          tap = "enabled";
+        };
       };
 
       output = {

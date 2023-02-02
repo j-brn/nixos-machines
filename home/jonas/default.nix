@@ -7,8 +7,9 @@
   imports = [
     ./browser.nix
     ./git.nix
-    ./sway.nix
+    ./sway
     ./alacritty.nix
     ./zsh.nix
+    ./packages
   ];
 }

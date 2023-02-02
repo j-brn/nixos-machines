@@ -33,7 +33,7 @@ in
 
       output = {
         "*" = {
-          bg = "${../../assets/wallpaper.jpg} fill";
+          bg = "${./wallpaper.jpg} fill";
         };
       };
 

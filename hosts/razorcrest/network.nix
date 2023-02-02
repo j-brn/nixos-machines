@@ -1,6 +1,5 @@
 {
   systemd.network.enable = false;
-  environment.systemPackages = [ dnsutils mtr ];
 
   networking = {
     dhcpcd.enable = false;

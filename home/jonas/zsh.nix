@@ -1,4 +1,6 @@
 { pkgs, ... }: {
+  home.packages = with pkgs; [ direnv ];
+
   programs.zsh = {
     enable = true;
     enableCompletion = true;

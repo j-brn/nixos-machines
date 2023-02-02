@@ -2,6 +2,16 @@
 
 let
   mod = "Mod1";
+
+  launcher =
+    pkgs.writeShellScript "launcher" ''
+      ${pkgs.wofi}/bin/wofi \
+        --show drun \
+        --insensitive \
+        --gtk-dark \
+        --allow-images \
+        --no-actions
+    '';
 in
 
 {
@@ -83,6 +93,7 @@ in
         "${mod}+Shift+0" = "move container to workspace 10";
 
         "${mod}+Return" = "exec ${pkgs.alacritty}/bin/alacritty";
+        "${mod}+d" = "exec ${launcher}";
       };
     };
   };

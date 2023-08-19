@@ -14,7 +14,7 @@ inputs.nixpkgs.lib.nixosSystem {
   modules = [
     "${inputs.self}/modules"
     "${inputs.self}/hosts/${hostname}"
-    inputs.agenix.nixosModule
+    inputs.agenix.nixosModules.default
     inputs.disko.nixosModules.disko
   ] ++ inputs.nixpkgs.lib.optionals enableHomeManager [
     inputs.home-manager.nixosModule

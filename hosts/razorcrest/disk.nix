@@ -10,7 +10,6 @@
           partitions = [
             {
               name = "esp";
-              type = "partition";
               start = "1MiB";
               end = "512MiB";
               bootable = true;
@@ -22,7 +21,6 @@
             }
             {
               name = "nixos";
-              type = "partition";
               start = "512MiB";
               end = "100%";
               content = {
@@ -44,7 +42,6 @@
         type = "lvm_vg";
         lvs = {
           root = {
-            type = "lvm_lv";
             size = "450GB";
             content = {
               type = "filesystem";
@@ -57,7 +54,6 @@
           };
 
           swap = {
-            type = "lvm_lv";
             size = "100%FREE";
             content = {
               type = "swap";

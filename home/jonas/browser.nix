@@ -5,7 +5,7 @@
     enable = true;
     package = pkgs.firefox-bin;
 
-    extensions = with pkgs.nur.repos.rycee.firefox-addons; [
+    profiles."jonas".extensions = with pkgs.nur.repos.rycee.firefox-addons; [
       ublock-origin
       clearurls
       darkreader
@@ -14,7 +14,7 @@
       kristofferhagen-nord-theme
       sponsorblock
       bitwarden
-      bypass-paywalls-clean
+      languagetool
     ];
 
     profiles."jonas" = {
@@ -79,6 +79,7 @@
         "toolkit.telemetry.shutdownPingSender.enabled" = false;
         "toolkit.telemetry.unified" = false;
         "toolkit.telemetry.updatePing.enabled" = false;
+        "signon.rememberSignons" = false;
       };
     };
   };

@@ -1,7 +1,7 @@
 { config, pkgs, lib, self, ... }:
 
 let
-  mod = "Mod1";
+  mod = "Mod4";
 
   launcher =
     pkgs.writeShellScript "launcher" ''

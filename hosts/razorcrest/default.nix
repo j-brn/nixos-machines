@@ -4,6 +4,7 @@
     ./disk.nix
     ./network.nix
     ./graphics.nix
+    ./bluetooth.nix
   ];
 
   boot = {

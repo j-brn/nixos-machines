@@ -13,9 +13,9 @@
       };
     };
 
-    enableDefaultFonts = true;
+    enableDefaultPackages = true;
     fontDir.enable = true;
-    fonts = with pkgs; [
+    packages = with pkgs; [
       anonymousPro
       arkpandora_ttf
       caladea
@@ -62,7 +62,7 @@
   environment.etc =
     let
       # fonts with src attributes
-      font_sources = map (v: v.src) (lib.filter (v: v ? src) config.fonts.fonts);
+      font_sources = map (v: v.src) (lib.filter (v: v ? src) config.fonts.packages);
     in
     builtins.listToAttrs (lib.imap0 (n: v: lib.nameValuePair "src-cache/fonts/${toString n}" { source = builtins.toPath v; }) font_sources);
 }

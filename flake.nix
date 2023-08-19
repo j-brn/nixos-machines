@@ -24,7 +24,7 @@
       nixosConfigurations = import ./hosts inputs;
 
       devShells.${system}.default = pkgs.mkShellNoCC {
-        packages = [ pkgs.nixpkgs-fmt inputs.agenix.defaultPackage.${system} ];
+        packages = [ pkgs.nixpkgs-fmt inputs.agenix.packages.${system}.default ];
       };
     };
 }

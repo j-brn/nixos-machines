@@ -7,7 +7,7 @@
     enableAutosuggestions = true;
 
     shellAliases = {
-      ls = "exa";
+      ls = "eza";
       find = "fd";
       grep = "rg";
       cat = "bat --plain --pager=none";

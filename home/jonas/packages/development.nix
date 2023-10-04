@@ -1,9 +1,9 @@
 { pkgs, ... }:
 {
   home.packages = with pkgs; [
-    jetbrains.clion
-    jetbrains.phpstorm
-    jetbrains.pycharm-community
-    jetbrains.idea-community
+    (jetbrains.plugins.addPlugins jetbrains.clion [ "github-copilot" ])
+    (jetbrains.plugins.addPlugins jetbrains.phpstorm [ "github-copilot" ])
+    (jetbrains.plugins.addPlugins jetbrains.pycharm-community [ "github-copilot" ])
+    (jetbrains.plugins.addPlugins jetbrains.rust-rover [ "github-copilot" ])
   ];
 }

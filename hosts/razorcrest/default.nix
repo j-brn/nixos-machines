@@ -5,6 +5,7 @@
     ./network.nix
     ./graphics.nix
     ./bluetooth.nix
+    ./gconf.nix
   ];
 
   boot = {

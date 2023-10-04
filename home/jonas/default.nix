@@ -11,5 +11,6 @@
     ./alacritty.nix
     ./zsh.nix
     ./packages
+    ./easyeffects.nix
   ];
 }

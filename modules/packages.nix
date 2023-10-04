@@ -2,7 +2,9 @@
 {
   environment.systemPackages = with pkgs; [
     vim
-    exa
+    eza
+    dnsutils
+    mtr
     fd
     ripgrep
     bat

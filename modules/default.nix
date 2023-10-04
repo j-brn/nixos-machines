@@ -9,5 +9,6 @@
     ./packages.nix
     ./nix.nix
     ./zsh.nix
+    ./tailscale.nix
   ];
 }

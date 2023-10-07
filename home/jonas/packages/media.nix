@@ -10,5 +10,6 @@
     jellyfin-media-player
     webcamoid
     gimp
+    wl-mirror
   ];
 }

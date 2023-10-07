@@ -5,6 +5,7 @@
     eza
     dnsutils
     mtr
+    nmap
     fd
     ripgrep
     bat

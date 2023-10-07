@@ -1,6 +1,4 @@
 {
-  description = "My nix flake configuration";
-
   inputs = {
     nixpkgs = { url = "github:NixOS/nixpkgs/nixos-unstable"; };
     nur = { url = "github:nix-community/NUR"; };

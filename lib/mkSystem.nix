@@ -12,6 +12,7 @@ inputs.nixpkgs.lib.nixosSystem {
   inherit system;
   specialArgs = { inherit inputs; } // extraSpecialArgs;
   modules = [
+    { networking.hostName = hostname; }
     "${inputs.self}/modules"
     "${inputs.self}/hosts/${hostname}"
     inputs.agenix.nixosModules.default
